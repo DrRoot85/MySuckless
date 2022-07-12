@@ -1,0 +1,3 @@
+#!/bin/sh
+
+networkmanager_dmenu -l 25 -i -b 

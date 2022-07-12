@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Import the colors
+. "${HOME}/.cache/wal/colors.sh"
+
+
+wal -i /home/mahmoudhb/Pictures/wallpapers/$(ls /home/mahmoudhb/Pictures/wallpapers | dmenu -l 25
+) && sudo sh /home/mahmoudhb/.config/scripts/rebuild
