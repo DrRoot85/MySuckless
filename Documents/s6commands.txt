@@ -1,0 +1,8 @@
+1-#
+ touch /etc/s6/adminsv/default/contents.d/connmand
+
+touch /etc/s6/adminsv/default/contents.d/{acpid,autofs,cronie,cupsd,elogind,xdm,fuse,haveged,hdparm,smbd,sshd,syslog-ng}
+
+
+2-#
+ s6-db-reload

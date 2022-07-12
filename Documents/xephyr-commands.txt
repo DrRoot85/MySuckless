@@ -1,0 +1,12 @@
+Xephyr -br -ac -noreset -screen 800x600 :1
+
+DISPLAY=:1 xterm
+
+DISPLAY=:1 spectrwm ## window manager
+
+startx -- /usr/bin/Xephyr :1
+
+
+## qtile -c ~/.config/qtile/default_config.py &
+
+

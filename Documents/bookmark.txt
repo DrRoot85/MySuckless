@@ -1,0 +1,5 @@
+https://wiki.artixlinux.org/Main/Configuration
+
+https://wiki.artixlinux.org/Site/PipewireInsteadPulseaudio
+
+https://wiki.artixlinux.org/Main/S6

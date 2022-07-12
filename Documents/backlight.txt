@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+
+
+
+# Increase keyboard backlight by 50
+macbook-lighter-kbd --inc 50
+# Increase screen backlight by 50
+macbook-lighter-screen --inc 50
+# Set screen backlight to max
+macbook-lighter-screen --max
+# start auto adjust daemon
+systemctl start macbook-lighter
+# start auto adjust interactively, root previlege needed
+macbook-lighter-ambient

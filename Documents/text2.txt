@@ -1,0 +1,26 @@
+ usermod -a -G video,audio,input,power,storage,optical,lp,scanner,dbus,adbusers,uucp,vboxusers USER
+
+
+	==> Add a service:
+  s6-service add default <service>
+	==> Start/stop a service:
+  s6-rc -u/-d change <service>
+	==> Recompile the service database:
+  s6-db-reload <args>
+
+
+###
+    Stop a service/bundle # s6-rc -d change service_name
+    Start a service/bundle # s6-rc -u change service_name
+    Restart a service (only works with s6-rc longruns) # s6-svc -r /run/service/service_name
+    List all active services # s6-rc -a list
+    List all services/bundles in the database # s6-rc-db list all
+    Check the status of an s6-rc longrun # s6-svstat /run/service/service_name 
+
+
+ # touch /etc/s6/adminsv/default/contents.d/service1
+ # touch /etc/s6/adminsv/default/contents.d/service2
+ # s6-db-reload
+
+####
+

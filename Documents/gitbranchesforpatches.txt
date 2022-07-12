@@ -1,0 +1,46 @@
+1-## register email & username for git
+git config --global user.email "dr.root85@gmail.com"
+git config --global user.name "DrRoot85"
+
+2-## Clean The Master Branch
+make clean && rm -f config.h && git reset --hard origin/master
+
+
+3-## Make/Create New Branch
+git branch config
+
+## to see branch 
+git branch 
+
+
+4-## Switch Branch -- #config# branch name
+git checkout config
+
+###
+To Apply Patches:
+git apply /Path to Patch
+#if not patches -- not apply
+patch -p1 < patch path
+
+
+##
+if you want to roll back the changes, run git apply -R pertag.diff.
+##
+###
+
+5-## Add The Edit Files
+git add config.def.h
+
+6-## Commit The Changes -m BranchName
+git commit -m config
+
+7-## After Editing  Back to Branch Master
+git checkout master
+
+
+8-## Merge the Edit Remember to mere all braches 
+git merge config -m config
+
+9-## Finally 
+make && sudo make clean install
+
